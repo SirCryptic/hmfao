@@ -8,5 +8,5 @@ Hide My F**king Ass Online Is A Simple Bash Script To quickly launch tor with a 
 
 - `git clone https://github.com/SirCryptic/hmfao`
 - `cd hmfao`
-- `bash hmao.sh
+- `bash hmfao.sh`
 
