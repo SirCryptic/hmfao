@@ -1,6 +1,6 @@
 ## Script to connect to tor / launch firfox in one go
 ## This script is built to automate the proxychains and tor service together for stronger anonymity!!!
-##  Changes your external/public ip everytime you open and close the browser. 
+##  Changes your external/public ip everytime you open and close the browser / launch the script. 
 
 #! /bin/bash
 
