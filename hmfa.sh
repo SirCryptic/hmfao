@@ -1,13 +1,6 @@
-## Script to connect to openvpn and use vpnbook
-## config file, username, and password
-##
+## Script to connect to tor / launch firfox in one go
 ## This script is built to automate the proxychains and tor service together for stronger anonymity!!!
-##
 ##  Changes your external/public ip everytime you open and close the browser. 
-##  Uses four different proxy servers to bounce off US,Canada,Europe,Germany.
-##  
-## Uses three nameservers from around the US to pass off and return quarries without using any ISP services.
-## 
 
 #! /bin/bash
 
@@ -73,8 +66,8 @@ echo -e '\e[0m\e[3;39m-------------------------------
 -------------------------------
 '
 
-echo -e $Blue" ┌─["$red"HMFAO$Blue]──[$red~$Blue]─["$yellow"BETA$Blue]:"
-echo -e $Blue" └─────► " ;read -p " Option: " n
+echo -e $Blue" ┌─["$red"HMFAO$Blue]──[$red~$Blue]─["$yellow"BETA$Blue]"
+read -p      " └─────► " n
 case $n in
     1) myip="$(dig +short myip.opendns.com @resolver1.opendns.com)";echo "My WAN/Public IP address: ${myip}";;
     2) systemctl start tor.service; proxychains firefox "https://ipleak.net/";; 
